@@ -1,0 +1,550 @@
+/*
+  ---01 TYPOGRAPHY SYSTEM
+-FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+-FONT WEIGHTS:
+DEFAULT: 400
+Medium:500
+Semi-bold:600
+Bold: 700
+
+-LINE HEIGHTS:
+Default: 1
+Small: 1.2
+Paragraph default: 1.6
+
+-Leeter spacing
+-0.5px
+-0.75px
+  
+  ---02 COLORS
+  Primary: #ec008c
+  Tints: #fae5d3
+  Shades:#cf711f
+  Accents:
+  Greys:#6c757d #494f54 #98a6ad #555 #333
+
+  ---03 SHADOWS
+  ---04 BORDER RADIUS
+   Default: 9px
+  ---05 WHITE SPACE
+-SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Oswald, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+/*--- HEADER ---*/
+.header {
+  background-color: #f8f8f8f3;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.header-container a {
+  color: #6c757d;
+}
+.header-logo,
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header-contact ul {
+  display: flex;
+}
+.header-language li {
+  padding: 0 0.5rem;
+}
+.header-language li:first-child {
+  border-right: 2px solid #6c757d;
+}
+.contact-icon {
+  font-size: 1.6rem !important;
+}
+
+/*--- NAVIGATION ---*/
+
+.nav {
+  border-bottom: 1px solid #aaa;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding: 1.6rem 0;
+  color: #aaa;
+}
+.nav-bar-list,
+.nav-bar-btns {
+  display: flex;
+  gap: 3rem;
+}
+.nav-bar-link:link,
+.nav-bar-link:visited {
+  font-weight: 500;
+  color: #6c757d;
+}
+.nav-bar-link:hover,
+.nav-bar-link:active {
+  color: #ec008c;
+}
+.nav-bar-btn:link,
+.nav-bar-btn:visited {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.3rem 1rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #ec008c;
+  border-radius: 0.3rem;
+  transition: all 0.3s;
+  box-shadow: 0 0 8px rgb(236 0 140 / 60%);
+}
+.nav-bar-btn:hover,
+.nav-bar-btn:active {
+  background-color: rgba(180, 1, 109, 0.9);
+}
+.nav-bar-btn.nav-bar-btn-mobile,
+.hamburger-menu {
+  display: none;
+}
+.nav-bar-link i {
+  display: none;
+}
+/*--- CAROUSEL ---*/
+
+.carousel {
+  display: flex;
+  position: relative;
+}
+.carousel-image {
+  width: 100%;
+}
+.all-h4 {
+  color: #6c757d;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 1.6rem;
+}
+.all-h3 {
+  color: #ec008c;
+  font-size: 3.6rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 0.5rem;
+}
+.carousel-button:link,
+.carousel-button:visited {
+  color: #fff;
+  background-color: #39afd1;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 10px rgb(57, 175, 209, 0.7);
+  transition: all 0.3s;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0.7rem 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 120%;
+  transform: translate(-50%, 0);
+}
+.carousel-button:hover,
+.carousel-button:active {
+  background-color: #287d94;
+}
+.carousel-text-box {
+  position: absolute;
+  top: 12%;
+  left: 15%;
+}
+.btn:link,
+.btn:visited {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(108, 117, 125, 0.377);
+  font-size: 13rem;
+}
+.btn:hover,
+.btn:active {
+  color: rgba(108, 117, 125, 0.8);
+}
+.btn-icon {
+  font-size: 5.2rem !important;
+}
+/* ги направив вака и после видов дека копчето е уствари по цела висина на флексот шо е уствари и полесно*/
+.btn-left {
+  left: 5%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.btn-right {
+  right: 5%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.carousel-slider {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, 0);
+}
+.carousel-slider li {
+  height: 0.3rem;
+  width: 3rem;
+  background-color: rgba(108, 117, 125, 0.377);
+}
+.carousel-slider li a {
+  padding: 0.3rem 1.5rem;
+}
+.slider {
+  display: flex;
+  padding: 1rem 3rem;
+}
+.slider li {
+  padding: 0 3rem;
+  border-right: 1px solid #6c757d;
+  font-size: 1.4rem;
+}
+.marquee-parent {
+  background-color: #f8f8f8f3;
+}
+marquee {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+marquee a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*--- WHAT DO I NEED ---*/
+.what-do-i-need-parent {
+  border-bottom: 0.5px solid #6c757d38;
+  border-top: 0.5px solid #6c757d38;
+}
+.what-do-i-need {
+  padding-bottom: 2.4rem;
+}
+.what-do-i-need-icons {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.what-icon {
+  font-size: 3.8rem !important;
+  border: 0.2rem solid;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.what-do-i-need-item p {
+  justify-content: center;
+  text-align: center;
+  font-size: 1.6rem;
+  color: rgba(97, 97, 97, 0.85);
+}
+.what-do-i-need-item:nth-child(1),
+.what-do-i-need-item:nth-child(8) {
+  color: #a86acd;
+}
+.what-do-i-need-item:nth-child(2) {
+  color: #f67a00;
+}
+.what-do-i-need-item:nth-child(3),
+.what-do-i-need-item:nth-child(7) {
+  color: #71ad3b;
+}
+.what-do-i-need-item:nth-child(4),
+.what-do-i-need-item:nth-child(6) {
+  color: #08939e;
+}
+.what-do-i-need-item:nth-child(5) {
+  color: #f15854;
+}
+.what-do-i-need-item:hover,
+.what-do-i-need-item:active {
+  filter: brightness(0.8);
+}
+
+/*--- THREE BLOCKS ---*/
+.blocks {
+  background-color: #f8f8f8f3;
+  border-bottom: 2px solid #ec008c;
+}
+.tri-bloka {
+  display: flex;
+  gap: 4.6rem;
+  padding: 3.6rem 0;
+}
+.apliciraj-online,
+.kursna-lista,
+.soopstenija {
+  width: 33%;
+  background-color: #fff;
+}
+.apliciraj-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem;
+}
+.all-h5 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.klikni-povekje:link,
+.klikni-povekje:visited {
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  color: #ec008c;
+}
+.klikni-povekje:hover,
+.klikni-povekje:active {
+  color: #920058;
+}
+.klikni-povekje i {
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+/* BLOCK 1*/
+.apliciraj-online {
+  justify-content: center;
+  text-align: center;
+}
+.apliciraj-online img {
+  width: 85%;
+}
+.apliciraj-online p {
+  font-weight: 200;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* BLOCK 2*/
+.kursna-lista-tabela {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.kurs img {
+  width: 4.4rem;
+}
+.kurs td {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #6c757d;
+  padding: 0.3rem 1rem;
+}
+/* BLOCK 3*/
+
+.soopstenija p {
+  font-size: 1.6rem;
+  padding-left: 1.6rem;
+}
+.soopstenie {
+  display: flex;
+  max-height: 60%;
+  gap: 2rem;
+}
+.soopstenie p {
+  padding: 0.2rem 0.5rem;
+  white-space: normal;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+.soopstenie img {
+  width: 40%;
+}
+.soopstenija span {
+  color: #ec008c;
+}
+.soopstenija-carousel {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1.2rem;
+}
+.btn-carousel,
+.btn-carousel-arrow {
+  display: flex;
+  align-items: center;
+}
+.btn-carousel a,
+.btn-carousel-arrow a {
+  font-size: 1.6rem;
+  justify-content: center;
+  text-align: center;
+}
+.btn-carousel-arrow a:link,
+.btn-carousel-arrow a:visited {
+  border-radius: 50%;
+  padding: 1rem;
+}
+.btn-carousel :link,
+.btn-carousel :visited {
+  border-radius: 50%;
+  padding: 0.5rem 1.2rem;
+}
+.btn-carousel :hover,
+.btn-carousel :active,
+.btn-carousel-arrow :hover,
+.btn-carousel-arrow :active {
+  background-color: rgba(108, 117, 125, 0.2);
+}
+
+/*--- DIGITALNI KANALI---*/
+.digitalni-kanali {
+  margin-bottom: 5.2rem;
+}
+.digital-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.banking {
+  width: 22%;
+  background-color: #fbfbfb;
+  padding: 1.6rem;
+  box-shadow: 0 3px 3px #e2e2e2;
+}
+.digital-h5,
+.digital-icons,
+.digital-p {
+  font-size: 1.8rem;
+  color: #98a6ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.digital-h5 {
+  font-weight: 400;
+}
+.digital-icons i {
+  font-size: 6.4rem;
+  padding: 2rem;
+}
+.digital-p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.digital-wrap:hover,
+.digital-wrap:active {
+  filter: brightness(0.8);
+}
+
+/*--- TOPSI ---*/
+.topsi-cont {
+  background-color: #f8f8f8f3;
+  border-bottom: 0.5px solid #6c757d38;
+}
+.topsi-golden {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 6rem 2.6rem;
+}
+.topsi-golden img {
+  width: 100%;
+}
+.topsi,
+.golden {
+  display: flex;
+  width: 40%;
+}
+.topsi-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #ec008c;
+  padding: 0.2rem;
+}
+.topsi-p:hover,
+.topsi-p:active {
+  color: #920058;
+}
+
+/*--- FOOTER ---*/
+.footer {
+  background-color: #ebebeb;
+  padding: 1.8rem;
+}
+.footer-lists {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3.2rem;
+  border-bottom: 0.5px solid rgba(152, 166, 173, 0.274);
+}
+.footer-list h4 {
+  color: #ce007b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 0.6rem;
+}
+.footer-list a,
+.footer-bottom a {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: #6c757d;
+  transition: all 0.3s;
+}
+.footer-list a:hover,
+.footer-list a:active,
+.footer-bottom a:hover,
+.footer-bottom a:active {
+  color: #ec008c;
+}
+.footer-list i {
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.6rem;
+}
+.footer-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-social a {
+  color: #98a6ad;
+}

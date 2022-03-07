@@ -1,0 +1,154 @@
+/*below 1200px    kursna lista se gubi, header font na karusela se namaluva, size na topsi se zgolemuva*/
+@media (max-width: 75em) {
+  .carousel-text-box {
+    transform: scale(0.9);
+  }
+  .kursna-lista {
+    display: none;
+  }
+  .apliciraj-online,
+  .soopstenija {
+    width: 50%;
+  }
+  .topsi,
+  .golden {
+    /* width: 42%; */
+    transform: scale(1.3);
+  }
+}
+/*below 1000px     se gubi prazen prostor od containerite, se gubi nav bar vo hamburger menu, digitalni kanali stanuvaat 2x2*/
+@media (max-width: 62.5em) {
+  .container {
+    max-width: 95%;
+  }
+  .digital-boxes {
+    flex-wrap: wrap;
+    /* justify-content: center; */
+  }
+  .banking {
+    width: 44%;
+    margin: 1.6rem;
+  }
+  marquee {
+    max-width: 100%;
+  }
+  .footer {
+    padding: 1.6rem 0.2rem;
+  }
+  /*hamburger*/
+  .nav-bar-btn.nav-bar-btn-mobile,
+  .hamburger-menu {
+    display: block;
+  }
+  .nav-bar-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    border-top: 0.1rem solid rgba(170, 170, 170, 0.7);
+  }
+  .nav-bar-btns li:last-child {
+    display: none;
+  }
+  .nav-bar-link {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-bar-link i {
+    display: block;
+  }
+  .nav-bar-list,
+  .nav-container {
+    flex-direction: column;
+  }
+}
+/*below 768px      karusela stanuva slika a header i butt se pod nea, sto mi treba se prefrli 2x4, 3box se vo 1 kolona i se pojavuva pak kursna lista, futerot site vo edna kolona odat*/
+@media (max-width: 48em) {
+  .header-contact p {
+    display: none;
+  }
+  .carousel {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel-text-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: auto;
+    top: auto;
+  }
+  .what-do-i-need-icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .what-do-i-need-item {
+    flex-grow: 1 1 auto;
+    width: 25%;
+    padding: 1rem;
+  }
+  .tri-bloka {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .kursna-lista {
+    display: block;
+  }
+  .apliciraj-online,
+  .kursna-lista,
+  .soopstenija {
+    min-width: 100%;
+  }
+  .btn-carousel {
+    display: none;
+  }
+  .soopstenija-carousel {
+    justify-content: left;
+  }
+  .footer,
+  .footer-lists,
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-list {
+    padding-top: 1.6rem;
+  }
+  .footer-bottom img {
+    padding: 2.4rem 0;
+  }
+  .footer-social {
+    justify-content: center;
+  }
+}
+/*below 568     header se gubi kontakt i naselenie, digitalni odat vo 1col, topsi odi vo 1col */
+@media (max-width: 35.5em) {
+  .nav-container {
+    display: none;
+  }
+  .header-contact .header-language,
+  .header-logo li:nth-child(2),
+  .header-logo li:nth-child(3) {
+    display: none;
+  }
+  /* .digital-boxes {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  .banking {
+    min-width: 95%;
+  }
+  .topsi-golden {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .topsi,
+  .golden {
+    min-width: 100%;
+    transform: scale(0.95);
+    /* justify-content: center;
+    align-items: center;*/
+    padding-top: 2rem;
+  }
+}
